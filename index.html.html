@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love Mitchell 💖</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio
+  id="bgAudio"
+  preload="auto"
+  loop
+>
+  <source src="pics/valentine.mp3" type="audio/mp3">
+</audio>
+
+<!-- PAGE CONTAINER -->
+<div id="app">
+
+  <!-- PAGE 1 -->
+  <section class="page active" id="page1">
+    <div class="hearts"></div>
+    <h1>💐To My Love 💐</h1>
+    <div class="photo"><img src="pics/IMG_3404.JPG" alt="Heart 1"></div>
+    <h2>💖Mitchell💖</h2>
+    
+    <h1>I made this piece just for you </h1>
+    <button onclick="startAudio(); goToPage(2)">Enter</button>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page" id="page2">
+    <div class="floating-shapes"></div>
+    
+
+    <h2>🎉💗 Happy Birthday Mitchell 🎉💗</h2>
+
+    <p class="message">
+      ✨Today I celebrate you my love for your strength, your faith, and your brilliance.💫<br><br>
+      From a kasmall girl when I met you back highschool when your beauty was only in your eyes🤭, now it is all that I see when I look at you😍. Anyway, then to Daystar, and now in Kenya School of Law, your journey is a proof of your discipline,
+      courage, and trust in God.🌸<br><br>
+      Law school is not easy, yet you rose with grace and determination.
+      I am so proud of the woman you are becoming grounded in faith, purpose, and excellence.<br><br>
+      May God continue to guide your steps, enlarge your territory,
+      and fill your life with joy, peace, and love.
+      You inspire me more than you know😍.
+    </p> 
+        You have been my rock, my confidant, and my best friend. 🌹<br><br>
+      You have known me for a looong time and you have seen me at my best and worst, <br><br>
+      yet you have always loved me unconditionally. I am so grateful to have you in my life, <br><br>
+      and I look forward to many more years of love and happiness together💏.
+    <br><br>🎵</p>
+
+
+    <button onclick="goToPage(3)">💗 Let's Go 💗</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page" id="page3">
+    <h2>Some of Our Heart Prints 💞</h2>
+
+   <div class="gallerymain" id="gallerymain">
+        <!-- 6 placeholder images (heart-shaped for theme) -->
+    <div class="photo1"><img src="pics/IMG_0064.JPG" alt="Heart 1"></div>
+      <div class="photo1"><img src="pics/IMG_5281.JPG" alt="Heart 2"></div>
+      <div class="photo1"><img src="pics/IMG_2146.JPG" alt="Heart 3"></div>
+      <div class="photo1"><img src="pics/mlimani.jpg" alt="Heart 4"></div>
+      <div class="photo1"><img src="pics/IMG_3262.JPG" alt="Heart 5"></div>
+      <div class="photo1"><img src="pics/IMG_E3373.JPG" alt="Heart 6"></div>
+     </div>
+
+    
+
+    <p class="footer-text">I love you always ❤️</p>
+    <button onclick="goToPage(4)">Are you ready for this One? </button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page" id="page4">
+    <h2>Something Special Is Coming 💗</h2>
+
+    <div id="countdown">08:00:00</div>
+<div class="heart floating-heart"></div>
+    <input
+  type="password"
+  id="codeInput"
+  placeholder="Enter secret code"
+  autocomplete="off"
+  class="secret-input"
+/>
+
+    <p id="lockText">Something special unlocks soon 💗</p>
+    <p id="lockText">I know you are very impatient,😂 ngwisi ta wi wakwa<br><br>
+    If you can't wait enter the year we met to proceed.🤭</p>
+
+    <button id="unlockBtn" disabled onclick="goToPage(5)">Unlock Surprise</button>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page" id="page5">
+    <h1>Will you be my Valentine, Mitchell? ❤️</h1>
+
+    <div class="buttons">
+      <button class="yes" onclick="goToPage(6)">YES 💖</button>
+      <button class="no" onclick="goToPage(7)" id="noBtn">NO 🙈</button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page" id="page6">
+    <h1>Yay!!! 💕</h1>
+    <h1>💖I knew you would say yes 💕</h1>
+    <p>
+      <br>
+      Happy Birthday, my Valentine 💝
+    </p>
+
+    
+      <div class="photo"><img src="pics/mwali.jpg" alt="Heart 1"></div>
+          
+
+    <p class="footer-text">🫶I love you always ❤️</p>
+
+    <p class="footer-text">Babe I know you and you wan't to do this again, its okay I made this button for you</p>
+  
+  <button onclick="goToPage(1)">Do it again</button>
+</section>
+
+  <!-- PAGE 7 -->
+  <section class="page" id="page7">
+    <h1>You play too much!!</h1>
+    <p>
+      You have no option Mbweli😂<br>
+      Rethink your decisions and go back we start again 🤭
+    </p>
+
+    
+ <div class="photo"><img src="pics/monkey.jpg" alt="Heart 1"></div>
+    <p class="footer-text">I'll sue you</p>
+
+    <p class="footer-text">Babe really ebu enda hapo useme yes, its okay I made this button for you</p>
+  
+  <button onclick="goToPage(2)">Kimberly rudia🙈</button>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
